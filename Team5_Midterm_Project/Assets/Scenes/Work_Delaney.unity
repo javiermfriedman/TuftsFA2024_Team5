@@ -155,8 +155,7 @@ MonoBehaviour:
   isFront: 1
   foregroundColliders: []
   backgroundColliders: []
-  playerArt: {fileID: 0}
-  sprite: {fileID: 0}
+  player: {fileID: 0}
 --- !u!4 &353327328
 Transform:
   m_ObjectHideFlags: 0
@@ -216,26 +215,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8904212212995911846, guid: a269fab64e182b34bb75faa9cafd350e, type: 3}
   m_PrefabInstance: {fileID: 699949416}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &427409817 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 629094616918937825, guid: a269fab64e182b34bb75faa9cafd350e, type: 3}
-  m_PrefabInstance: {fileID: 699949416}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &427409818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427409815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390f3b9ae751e44880d1b2f36ea90f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isFront: 1
-  sortingOrder: 59
-  sprite: {fileID: 427409817}
 --- !u!1 &434515729
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_Turtle
       objectReference: {fileID: 0}
+    - target: {fileID: 629094616918937825, guid: a269fab64e182b34bb75faa9cafd350e, type: 3}
+      propertyPath: m_DrawMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2131522629418521024, guid: a269fab64e182b34bb75faa9cafd350e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -554,9 +537,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8904212212995911846, guid: a269fab64e182b34bb75faa9cafd350e, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 394009231628185281, guid: a269fab64e182b34bb75faa9cafd350e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 427409818}
+      addedObject: {fileID: 1256015250}
   m_SourcePrefab: {fileID: 100100000, guid: a269fab64e182b34bb75faa9cafd350e, type: 3}
 --- !u!1001 &949902945
 PrefabInstance:
@@ -664,6 +647,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7828786783864178155, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
   m_PrefabInstance: {fileID: 4374396409051183253}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1256015243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 394009231628185281, guid: a269fab64e182b34bb75faa9cafd350e, type: 3}
+  m_PrefabInstance: {fileID: 699949416}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1256015250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256015243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390f3b9ae751e44880d1b2f36ea90f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFront: 1
+  sortingOrder: 59
+  art: {fileID: 427409815}
+  sprite: {fileID: 0}
 --- !u!4 &1403384364 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4090748562858501886, guid: 495a4ddbfda274655817df781f60d7c5, type: 3}

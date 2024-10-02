@@ -33,6 +33,26 @@ public class PlayerOrder : MonoBehaviour{
         if (sprite)
         {
             sprite.sortingOrder = sortingOrder;
+            
+            //grow/shrink in size
+            if (sprite.size[0] < size[0])
+            {
+                sprite.size += new Vector2(0.01f, 0.01f);
+            } 
+            else if (sprite.size[0] > size[0])
+            {
+                sprite.size -= new Vector2(0.01f, 0.01f);
+            }
+
+            //get lighter/dimmer
+            if (sprite.material.color[0] < shadow[0])
+            {
+                sprite.material.color += new Color(0.01f, 0.01f, 0.01f, 0f);
+            } 
+            else if (sprite.material.color[0] > shadow[0])
+            {
+                sprite.material.color -= new Color(0.01f, 0.01f, 0.01f, 0f);
+            }
         }
     }
 
@@ -42,14 +62,14 @@ public class PlayerOrder : MonoBehaviour{
         if (isFront)
         {
             sortingOrder = 100;
-            sprite.size += new Vector2(0.5f, 0.5f);
-            sprite.material.color = shadow;
+            size = new Vector2(1.6f, 1.6f);
+            shadow = new Color(0.6f, 0.6f, 0.6f, 1f);
         }
         else
         {
             sortingOrder = 59;
-            sprite.size = size;
-            sprite.material.color = Color.white;
+            size = new Vector2(1.1f, 1.1f);
+            shadow = new Color(1f, 1f, 1f, 1f);
         }
     }
 }
