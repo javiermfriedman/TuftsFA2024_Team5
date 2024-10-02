@@ -33,8 +33,8 @@ public class GameHandler : MonoBehaviour
             SwapFrontBack();
         }
         
-        if (player.transform.position[1] < -7)
-            gameOver();
+        // if (player.transform.position[1] < -7)
+        //     gameOver();
     }
 
     public void SwapFrontBack(){
