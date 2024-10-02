@@ -24,7 +24,7 @@ public class PlayerOrder : MonoBehaviour{
         }
         
         sprite.material.color = Color.gray;
-        size = new Vector2(1.1f, 1.1f);
+        size = new Vector2(1.6f, 1.6f);
         shadow = new Color(0.6f, 0.6f, 0.6f, 1f);
     }
 
@@ -37,21 +37,21 @@ public class PlayerOrder : MonoBehaviour{
             //grow/shrink in size
             if (sprite.size[0] < size[0])
             {
-                sprite.size += new Vector2(0.01f, 0.01f);
+                sprite.size += new Vector2(0.02f, 0.02f);
             } 
             else if (sprite.size[0] > size[0])
             {
-                sprite.size -= new Vector2(0.01f, 0.01f);
+                sprite.size -= new Vector2(0.02f, 0.02f);
             }
 
             //get lighter/dimmer
             if (sprite.material.color[0] < shadow[0])
             {
-                sprite.material.color += new Color(0.01f, 0.01f, 0.01f, 0f);
+                sprite.material.color += new Color(0.02f, 0.02f, 0.02f, 0f);
             } 
             else if (sprite.material.color[0] > shadow[0])
             {
-                sprite.material.color -= new Color(0.01f, 0.01f, 0.01f, 0f);
+                sprite.material.color -= new Color(0.02f, 0.02f, 0.02f, 0f);
             }
         }
     }

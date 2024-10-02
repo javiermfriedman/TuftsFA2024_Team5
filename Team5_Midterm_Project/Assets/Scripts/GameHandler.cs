@@ -32,6 +32,8 @@ public class GameHandler : MonoBehaviour
             SwapFrontBack();
         }
         
+        if (player.transform.position[1] < -7)
+            gameOver();
     }
 
     public void SwapFrontBack(){
@@ -65,6 +67,15 @@ public class GameHandler : MonoBehaviour
                 backgroundColliders[n].GetComponent<PlatformObject>().SwapSharpBlurry(isFront);
             }
         }
+    }
+
+    public void gameOver() {
+        Debug.Log("GAME OVER!!");
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 
 }
