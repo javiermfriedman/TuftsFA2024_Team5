@@ -1,77 +1,72 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+// using System.Collections.Generic;
+// using System.Collections;
+// using UnityEngine;
 
-public class PlayerMove : MonoBehaviour
-{
-    Rigidbody2D rb2D;
-    private bool FaceRight = true; // determine which way player is facing.
-    public static float runSpeed = 10f;
-    public float startSpeed = 10f;
-    public bool isAlive = true;
-    private Vector3 hMove;
+// public class PlayerMove : MonoBehaviour
+// {
 
-    // Add a flag for auto-running
-    public bool isAutoRunning = true;
+//     //public Animator animator;
+//     Rigidbody2D rb2D;
+//     private bool FaceRight = true; // determine which way player is facing.
+//     public static float runSpeed = 10f;
+//     public float startSpeed = 10f;
+//     public bool isAlive = true;
+//     //public AudioSource WalkSFX;
+//     private Vector3 hMove;
 
-    // Jumping variables
-    public float jumpForce = 5f; // Smaller jump force
-    public bool isGrounded = true;
-    public Transform groundCheck;
-    public float groundCheckRadius = 0.2f;
-    public LayerMask whatIsGround;
+//     void Start()
+//     {
+//         //animator = gameObject.GetComponentInChildren<Animator>();
+//         rb2D = transform.GetComponent<Rigidbody2D>();
+//     }
 
-    void Start()
-    {
-        rb2D = transform.GetComponent<Rigidbody2D>();
+//     void Update()
+//     {
+//         //NOTE: Horizontal axis: [a] / left arrow is -1, [d] / right arrow is 1
+//         hMove = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
+//         if (isAlive == true)
+//         {
+//             transform.position = transform.position + hMove * runSpeed * Time.deltaTime;
 
-        // Make gravity stronger so the player falls faster
-        rb2D.gravityScale = 3.0f; // Increase gravity to make falling faster
-    }
+//             if (Input.GetAxis("Horizontal") != 0)
+//             {
+//                 //       animator.SetBool ("Walk", true);
+//                 //       if (!WalkSFX.isPlaying){
+//                 //             WalkSFX.Play();
+//                 //      }
+//             }
+//             else
+//             {
+//                 //      animator.SetBool ("Walk", false);
+//                 //      WalkSFX.Stop();
+//             }
 
-    void Update()
-    {
-        if (isAlive)
-        {
-            // Horizontal movement
-            if (isAutoRunning)
-            {
-                hMove = new Vector3(1.0f, 0.0f, 0.0f); // Always move to the right
-            }
-            else
-            {
-                hMove = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
-            }
+//             // Turning: Reverse if input is moving the Player right and Player faces left
+//             if ((hMove.x < 0 && !FaceRight) || (hMove.x > 0 && FaceRight))
+//             {
+//                 playerTurn();
+//             }
+//         }
+//     }
 
-            transform.position = transform.position + hMove * runSpeed * Time.deltaTime;
+//     void FixedUpdate()
+//     {
+//         //slow down on hills / stops sliding from velocity
+//         if (hMove.x == 0)
+//         {
+//             rb2D.velocity = new Vector2(rb2D.velocity.x / 1.1f, rb2D.velocity.y);
+//         }
+//     }
 
-            // Jumping: check if grounded, and if jump button (spacebar) is pressed
-            if (isGrounded && Input.GetButtonDown("Jump"))
-            {
-                Jump();
-            }
+//     private void playerTurn()
+//     {
+//         // NOTE: Switch player facing label
+//         FaceRight = !FaceRight;
 
-            // Check if the player should turn
-            if ((hMove.x < 0 && !FaceRight) || (hMove.x > 0 && FaceRight))
-            {
-                playerTurn();
-            }
-        }
-    }
-    private void Jump()
-    {
-        // Add a vertical force to the player to simulate jumping
-        rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
-    }
+//         // NOTE: Multiply player's x local scale by -1.
+//         Vector3 theScale = transform.localScale;
+//         theScale.x *= -1;
+//         transform.localScale = theScale;
+//     }
+// }
 
-    private void playerTurn()
-    {
-        // Switch player facing direction
-        FaceRight = !FaceRight;
-
-        // Multiply player's x local scale by -1 to flip the sprite
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
-    }
-}
