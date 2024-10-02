@@ -13,6 +13,7 @@ public class PlatformObject : MonoBehaviour{
     // Start is called before the first frame update
     void Start()
     {
+        //assumes player starts in front!
         if (isFrontArt)
         {
             artSharp.SetActive(true);
