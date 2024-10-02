@@ -37,8 +37,4 @@ public class PlatformObject : MonoBehaviour{
             artBlurry.SetActive(true);
         }
     }
-
-
-
-
 }

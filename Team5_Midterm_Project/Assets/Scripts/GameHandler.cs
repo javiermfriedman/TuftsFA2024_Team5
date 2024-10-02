@@ -7,15 +7,18 @@ public class GameHandler : MonoBehaviour
     public bool isFront = true;
     public GameObject[] foregroundColliders;
     public GameObject[] backgroundColliders;
+    
+    public GameObject player;
     //public List<GameObject> foregroundColliders = new List<GameObject>();
     //public List<GameObject> backgroundColliders = new List<GameObject>();
-
 
     // Start is called before the first frame update
     void Start()
     {
         foregroundColliders = GameObject.FindGameObjectsWithTag("frontColliders");
         backgroundColliders = GameObject.FindGameObjectsWithTag("backColliders");
+        
+        player = GameObject.FindWithTag("Player");
 
         UpdateWorldColliders();
     }
@@ -34,6 +37,7 @@ public class GameHandler : MonoBehaviour
     public void SwapFrontBack(){
         Debug.Log("Trying to Swap Front / Back from front is " + isFront);
         isFront = !isFront;
+        player.GetComponent<PlayerOrder>().swapOrder();
         UpdateWorldColliders();
     }
 
