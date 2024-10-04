@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour
 {
     public static GameObject theGameHandler;
-    
 
     public bool isFront = true;
     public GameObject[] foregroundColliders;
@@ -27,6 +27,8 @@ public class GameHandler : MonoBehaviour
         UpdateWorldColliders();
     }
 
+    // ensures that the game handler is not deleted/duplicated when swtiching
+    // scenes 
     void Awake(){
         if(theGameHandler != null && theGameHandler != this) {
             Destroy(this.gameObject);
@@ -96,6 +98,10 @@ public class GameHandler : MonoBehaviour
         #else
             Application.Quit();
         #endif
+    }
+
+    public void restartGame(){
+        SceneManager.LoadScene("Ella's_workspace"); //TODO change to whatever scene the actual game is in
     }
 
 }
