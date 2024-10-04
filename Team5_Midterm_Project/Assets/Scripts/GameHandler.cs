@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GameHandler : MonoBehaviour
 {
+    public static GameObject theGameHandler;
+    
+
     public bool isFront = true;
     public GameObject[] foregroundColliders;
     public GameObject[] backgroundColliders;
@@ -22,6 +25,17 @@ public class GameHandler : MonoBehaviour
         player = GameObject.FindWithTag("Player");
 
         UpdateWorldColliders();
+    }
+
+    void Awake(){
+        if(theGameHandler != null && theGameHandler != this) {
+            Destroy(this.gameObject);
+        }
+        else {
+            theGameHandler = this.gameObject;
+        }
+
+        DontDestroyOnLoad(theGameHandler);
     }
 
     // Update is called once per frame
