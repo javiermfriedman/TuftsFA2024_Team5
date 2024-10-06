@@ -1653,7 +1653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3493709463479079307, guid: f0aba4601442a490fa9f73f9adce1dc3, type: 3}
       propertyPath: m_Name
-      value: Button_Restart
+      value: Button_HomeScreen
       objectReference: {fileID: 0}
     - target: {fileID: 6085780277991692890, guid: f0aba4601442a490fa9f73f9adce1dc3, type: 3}
       propertyPath: m_Pivot.x

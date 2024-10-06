@@ -91,6 +91,11 @@ public class GameHandler : MonoBehaviour
         }
     }
 
+    public void StartGame() {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Ella's_workspace");
+    }
+
     public void gameOver() {
         Debug.Log("GAME OVER!!");
         #if UNITY_EDITOR
@@ -114,7 +119,7 @@ public class GameHandler : MonoBehaviour
         // }
 
         // Please also reset all static variables here, for new games!
-        SceneManager.LoadScene("Ella's_workspace"); //TODO change to whatever scene the actual game is in
+        SceneManager.LoadScene("StartingScene");
     }
 
     // I don't think we need this but it was in the tutorial for the pause menu
