@@ -101,7 +101,29 @@ public class GameHandler : MonoBehaviour
     }
 
     public void restartGame(){
+        Time.timeScale = 1f;
+        GameHandler_PauseMenu.GameisPaused = false;
+
+        // // Make sure the pause menu gets turned off
+        // // Get a reference to the pause menu instance
+        // GameHandler_PauseMenu pauseMenu = FindObjectOfType<GameHandler_PauseMenu>();
+        // // Ensure that the reference to the pauseMenu is not null
+        // if (pauseMenu != null)
+        // {
+        //     pauseMenu.pauseMenuUI.SetActive(false);  // Access the pauseMenuUI from the instance
+        // }
+
+        // Please also reset all static variables here, for new games!
         SceneManager.LoadScene("Ella's_workspace"); //TODO change to whatever scene the actual game is in
     }
+
+    // I don't think we need this but it was in the tutorial for the pause menu
+    // // Replay the Level where you died
+    //   public void ReplayLastLevel() {
+    //         Time.timeScale = 1f;
+    //         GameHandler_PauseMenu.GameisPaused = false;
+    //         SceneManager.LoadScene("lastLevelDied");
+    //          // Reset all static variables here, for new games:
+    //   }
 
 }
