@@ -9,6 +9,8 @@ TagManager:
   - backColliders
   - playerArt
   - PauseMenuSlider
+  - Checkpoint
+  - DaCheckpoint
   layers:
   - Default
   - TransparentFX
