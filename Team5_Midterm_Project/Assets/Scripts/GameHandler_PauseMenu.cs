@@ -13,13 +13,15 @@ public class GameHandler_PauseMenu : MonoBehaviour {
         private Slider sliderVolumeCtrl;
 
         void Awake(){
-                pauseMenuUI.SetActive(true); // so slider can be set
-                SetLevel (volumeLevel);
-                GameObject sliderTemp = GameObject.FindWithTag("PauseMenuSlider");
-                if (sliderTemp != null){
-                        sliderVolumeCtrl = sliderTemp.GetComponent<Slider>();
-                        sliderVolumeCtrl.value = volumeLevel;
-                }
+                // was set to true, but changed it to false because we don't have the volume button
+                pauseMenuUI.SetActive(false); 
+                // Would need code below for volume 
+                // SetLevel (volumeLevel);
+                // GameObject sliderTemp = GameObject.FindWithTag("PauseMenuSlider");
+                // if (sliderTemp != null){
+                //         sliderVolumeCtrl = sliderTemp.GetComponent<Slider>();
+                //         sliderVolumeCtrl.value = volumeLevel;
+                // }
         }
 
         void Start(){
@@ -50,6 +52,7 @@ public class GameHandler_PauseMenu : MonoBehaviour {
                 GameisPaused = false;
         }
 
+        // Code for volume slider
         public void SetLevel(float sliderValue){
                 mixer.SetFloat("MusicVolume", Mathf.Log10 (sliderValue) * 20);
                 volumeLevel = sliderValue;

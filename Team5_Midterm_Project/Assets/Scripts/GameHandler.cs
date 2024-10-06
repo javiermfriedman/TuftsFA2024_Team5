@@ -93,6 +93,7 @@ public class GameHandler : MonoBehaviour
 
     public void StartGame() {
         Time.timeScale = 1f;
+        GameHandler_PauseMenu.GameisPaused = false;
         SceneManager.LoadScene("Ella's_workspace");
     }
 
@@ -119,7 +120,7 @@ public class GameHandler : MonoBehaviour
         // }
 
         // Please also reset all static variables here, for new games!
-        SceneManager.LoadScene("StartingScene");
+        SceneManager.LoadScene("MainMenu");
     }
 
     // I don't think we need this but it was in the tutorial for the pause menu
