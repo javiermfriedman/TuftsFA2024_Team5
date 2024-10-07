@@ -12,12 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 39d719116ff2a488e80662141b316f18
   - enabled: 1
+    path: Assets/Scenes/Work_Javi.unity
+    guid: 3b8d08c8d6ca24038a2ed8b35d140a14
+  - enabled: 0
     path: Assets/Scenes/Ella's_workspace.unity
     guid: fab2d2931a2444b84823ce17f3290a2d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Death End Scene.unity
     guid: 0305b96db751a489a9b611e26c8513d6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Work_Delaney.unity
     guid: 6849f1b2d466142f5a4de7134049e17e
   m_configObjects: {}
