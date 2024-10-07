@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class GameHandler_PauseMenu : MonoBehaviour {
 
@@ -46,15 +47,23 @@ public class GameHandler_PauseMenu : MonoBehaviour {
                 GameisPaused = true;
         }
 
-        public void Resume(){
-                pauseMenuUI.SetActive(false);
-                Time.timeScale = 1f;
-                GameisPaused = false;
-        }
+    public void Resume(){
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameisPaused = false;
+    }
 
-        // Code for volume slider
-        public void SetLevel(float sliderValue){
-                mixer.SetFloat("MusicVolume", Mathf.Log10 (sliderValue) * 20);
-                volumeLevel = sliderValue;
-        }
+    public void restartGame(){
+        Time.timeScale = 1f;
+        GameisPaused = false;
+        pauseMenuUI.SetActive(false);
+        // Please also reset all static variables here, for new games!
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    // Code for volume slider
+    public void SetLevel(float sliderValue){
+        mixer.SetFloat("MusicVolume", Mathf.Log10 (sliderValue) * 20);
+        volumeLevel = sliderValue;
+    }
 }

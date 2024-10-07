@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour
 {
-    public static GameObject theGameHandler;
+    //public static GameObject theGameHandler;
 
     public bool isFront = true;
     public GameObject[] foregroundColliders;
     public GameObject[] backgroundColliders;
     
-    public GameObject player;
+    GameObject player;
     //public List<GameObject> foregroundColliders = new List<GameObject>();
     //public List<GameObject> backgroundColliders = new List<GameObject>();
 
@@ -29,6 +29,7 @@ public class GameHandler : MonoBehaviour
 
     // ensures that the game handler is not deleted/duplicated when swtiching
     // scenes 
+    /*
     void Awake(){
         if(theGameHandler != null && theGameHandler != this) {
             Destroy(this.gameObject);
@@ -39,6 +40,7 @@ public class GameHandler : MonoBehaviour
 
         DontDestroyOnLoad(theGameHandler);
     }
+    */
 
     // Update is called once per frame
     void Update(){
@@ -109,16 +111,15 @@ public class GameHandler : MonoBehaviour
     public void restartGame(){
         Time.timeScale = 1f;
         GameHandler_PauseMenu.GameisPaused = false;
-
+/*
         // // Make sure the pause menu gets turned off
         // // Get a reference to the pause menu instance
-        // GameHandler_PauseMenu pauseMenu = FindObjectOfType<GameHandler_PauseMenu>();
+        GameHandler_PauseMenu pauseMenu = FindObjectOfType<GameHandler_PauseMenu>();
         // // Ensure that the reference to the pauseMenu is not null
-        // if (pauseMenu != null)
-        // {
-        //     pauseMenu.pauseMenuUI.SetActive(false);  // Access the pauseMenuUI from the instance
-        // }
-
+        if (pauseMenu != null){
+             pauseMenu.pauseMenuUI.SetActive(false);  // Access the pauseMenuUI from the instance
+        }
+*/
         // Please also reset all static variables here, for new games!
         SceneManager.LoadScene("MainMenu");
     }
