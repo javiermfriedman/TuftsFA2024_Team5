@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     Rigidbody2D rb2D;
-    private bool FaceRight = true; // determine which way player is facing.
+   // private bool FaceRight = true; // determine which way player is facing.
     public static float runSpeed = 8f;
     public float startSpeed = 8f;
     public bool isAlive = true;
@@ -37,10 +37,10 @@ public class PlayerMove : MonoBehaviour
             transform.position = transform.position + hMove * runSpeed * Time.deltaTime;
 
             // Check if the player should be turning
-            if ((hMove.x < 0 && !FaceRight) || (hMove.x > 0 && FaceRight))
-            {
-                playerTurn();
-            }
+            //if ((hMove.x < 0 && !FaceRight) || (hMove.x > 0 && FaceRight))
+          //  {
+           //     playerTurn();
+          //  }
         }
     }
 
@@ -56,7 +56,7 @@ public class PlayerMove : MonoBehaviour
     private void playerTurn()
     {
         // Switch player facing direction
-        FaceRight = !FaceRight;
+       // FaceRight = !FaceRight;
 
         // Multiply player's x local scale by -1 to flip the sprite
         Vector3 theScale = transform.localScale;
