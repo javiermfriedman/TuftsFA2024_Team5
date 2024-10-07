@@ -15,7 +15,7 @@ public class PlayerJump : MonoBehaviour
     public LayerMask enemyLayer;
     public bool canJump = false;
     public int jumpTimes = 0;
-    public bool isAlive = true;
+    // public bool isAlive = true;
     //public AudioSource JumpSFX;
 
     void Start()
@@ -35,8 +35,9 @@ public class PlayerJump : MonoBehaviour
             canJump = false;
         }
 
-        if ((Input.GetButtonDown("Jump")) && (canJump) && (isAlive == true))
+        if ((Input.GetButtonDown("Jump")) && (canJump))
         {
+            Debug.Log("bruh");
             Jump();
         }
     }
@@ -60,10 +61,14 @@ public class PlayerJump : MonoBehaviour
         Collider2D enemyCheck = Physics2D.OverlapCircle(feet.position, 2f, enemyLayer);
         if ((groundCheck != null) || (groundFrontCheck != null) || (groundBackCheck != null) || (enemyCheck != null))
         {
-            //Debug.Log("I am trouching ground!");
+            Debug.Log("I am trouching ground!");
             jumpTimes = 0;
             return true;
+        } else {
+            Debug.Log("nno ground!");
+            return false;
         }
         return false;
+        
     }
 }

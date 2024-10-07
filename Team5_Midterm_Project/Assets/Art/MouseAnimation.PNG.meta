@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MouseAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 325
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84265487a3ae8421984fcc280ab6ec41
+      internalID: 354734759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 704
+        width: 325
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67ddc69b1dc546f0899014e622ffd4d
+      internalID: 1204762713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 704
+        width: 325
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32fb73df232c4c528ca7b21d00bede5
+      internalID: -956345215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 325
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3e1798b949c451ea4795d949abe111
+      internalID: 884709865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 384
+        width: 325
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7daed9fb69a4354b1179e1b6213134
+      internalID: 277863537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 384
+        width: 325
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a844339a64534f4381cb9582406aca2
+      internalID: 55187698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 325
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64de81160080f42ce94717275ad36bfc
+      internalID: -642520019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 64
+        width: 325
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292d1f6cacc1e4e5c8d41b11521aecbe
+      internalID: 627993241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 64
+        width: 325
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85f97a9305254b99b275bf5fc4710f3
+      internalID: -1733807765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +321,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MouseAnimation_0: 354734759
+      MouseAnimation_1: 1204762713
+      MouseAnimation_2: -956345215
+      MouseAnimation_3: 884709865
+      MouseAnimation_4: 277863537
+      MouseAnimation_5: 55187698
+      MouseAnimation_6: -642520019
+      MouseAnimation_7: 627993241
+      MouseAnimation_8: -1733807765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

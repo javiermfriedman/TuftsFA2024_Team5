@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7962352253825817677}
   - component: {fileID: 399377562576326888}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mushroom1blurry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2273931805654376259}
   - component: {fileID: 1591915493533340967}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mushroom1a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 5873595817165498723}
   - component: {fileID: 544839853652011556}
   - component: {fileID: 5260376669805241201}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mushroom1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ PlatformEffector2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7290874882885272640}
-  m_Enabled: 1
+  m_Enabled: 0
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
