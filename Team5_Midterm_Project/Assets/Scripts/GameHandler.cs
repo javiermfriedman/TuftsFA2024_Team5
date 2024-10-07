@@ -96,7 +96,7 @@ public class GameHandler : MonoBehaviour
     public void StartGame() {
         Time.timeScale = 1f;
         GameHandler_PauseMenu.GameisPaused = false;
-        SceneManager.LoadScene("Ella's_workspace");
+        SceneManager.LoadScene("Work_Javi");
     }
 
     public void gameOver() {

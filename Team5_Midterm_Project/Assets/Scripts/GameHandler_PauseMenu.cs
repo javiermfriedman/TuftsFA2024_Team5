@@ -14,9 +14,8 @@ public class GameHandler_PauseMenu : MonoBehaviour {
         private Slider sliderVolumeCtrl;
 
         void Awake(){
-                // was set to true, but changed it to false because we don't have the volume button
+                // was set to true, but changed it to false because it was showing up right away
                 pauseMenuUI.SetActive(false); 
-                // Would need code below for volume 
                 // SetLevel (volumeLevel);
                 // GameObject sliderTemp = GameObject.FindWithTag("PauseMenuSlider");
                 // if (sliderTemp != null){
