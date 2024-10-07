@@ -26,14 +26,12 @@ public class PlayerJump : MonoBehaviour
 
     void Update()
     {
-        if ((IsGrounded()) || (jumpTimes <= 1))
-        {
-            // if ((IsGrounded()) && (jumpTimes <= 1)){ // for single jump only
+        //if ((IsGrounded()) || (jumpTimes <= 1)){
+        if ((IsGrounded()) && (jumpTimes <= 1)){ // for single jump only
             canJump = true;
         }
-        else if (jumpTimes > 1)
-        {
-            // else { // for single jump only
+        //else if (jumpTimes > 1){
+        else { // for single jump only
             canJump = false;
         }
 

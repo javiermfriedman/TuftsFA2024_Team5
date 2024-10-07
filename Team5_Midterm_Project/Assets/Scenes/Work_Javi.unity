@@ -824,7 +824,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95d465a84422546df8e463fe61daa29a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camSpeed: 4
+  target: {fileID: 1256015256}
+  smoothing: 0.6
+  minPosition: {x: -60, y: 0}
+  maxPosition: {x: 130, y: 0}
 --- !u!1001 &534346264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1772,6 +1775,11 @@ MonoBehaviour:
   sortingOrder: 59
   art: {fileID: 427409815}
   sprite: {fileID: 0}
+--- !u!4 &1256015256 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2131522629418521024, guid: a269fab64e182b34bb75faa9cafd350e, type: 3}
+  m_PrefabInstance: {fileID: 699949416}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1386978657
 GameObject:
   m_ObjectHideFlags: 0
@@ -3742,7 +3750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_TagString
