@@ -15,6 +15,7 @@ public class PlayerJump : MonoBehaviour
     public LayerMask enemyLayer;
     public bool canJump = false;
     public int jumpTimes = 0;
+    public Animator anim;
     // public bool isAlive = true;
     //public AudioSource JumpSFX;
 
@@ -22,6 +23,8 @@ public class PlayerJump : MonoBehaviour
     {
         //anim = gameObject.GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponentInChildren<Animator>(); 
+        Debug.Log(anim);
     }
 
     void Update()
@@ -46,6 +49,7 @@ public class PlayerJump : MonoBehaviour
     {
         jumpTimes += 1;
         rb.velocity = Vector2.up * jumpForce;
+        anim.SetBool("Jump", true); 
         // anim.SetTrigger("Jump");
         // JumpSFX.Play();
 
@@ -63,6 +67,7 @@ public class PlayerJump : MonoBehaviour
         {
             Debug.Log("I am trouching ground!");
             jumpTimes = 0;
+            anim.SetBool("Jump", false); 
             return true;
         } else {
             Debug.Log("nno ground!");
