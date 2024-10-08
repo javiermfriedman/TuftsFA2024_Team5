@@ -1,3 +1,4 @@
+/*
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
@@ -5,7 +6,8 @@ using UnityEngine;
 public class PlayerJump : MonoBehaviour
 {
 
-    Rigidbody2D rb;
+    //public Animator anim;
+     Rigidbody2D rb;
     public float jumpForce = 20f;
     public Transform feet;
     public LayerMask groundLayer;
@@ -15,9 +17,12 @@ public class PlayerJump : MonoBehaviour
     public bool canJump = false;
     public int jumpTimes = 0;
     public Animator anim;
+    // public bool isAlive = true;
+    //public AudioSource JumpSFX;
 
     void Start()
     {
+        //anim = gameObject.GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>(); 
         Debug.Log(anim);
@@ -25,7 +30,16 @@ public class PlayerJump : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        //if ((IsGrounded()) || (jumpTimes <= 1)){
+        if ((IsGrounded()) && (jumpTimes <= 1)){ // for single jump only
+            canJump = true;
+        }
+        //else if (jumpTimes > 1){
+        else { // for single jump only
+            canJump = false;
+        }
+
+        if ((Input.GetButtonDown("Jump")) && (canJump))
         {
             Debug.Log("bruh");
             Jump();
@@ -34,26 +48,15 @@ public class PlayerJump : MonoBehaviour
 
     public void Jump()
     {
-        if ((IsGrounded()) && (jumpTimes <= 1))
-        {
-            canJump = true;
-            jumpTimes += 1;
-            rb.velocity = Vector2.up * jumpForce;
-            anim.SetBool("Jump", true); 
-    
-        }
-        else
-        {
-            canJump = false;
-        }
-    }
+        jumpTimes += 1;
+        rb.velocity = Vector2.up * jumpForce;
+        anim.SetBool("Jump", true); 
+        // anim.SetTrigger("Jump");
+        // JumpSFX.Play();
 
-    public void OnCollisionEnter2D (Collision2D other) 
-    {
-        anim.SetBool("Jump", false);
-        //Debug.Log("a");
+        //Vector2 movement = new Vector2(rb.velocity.x, jumpForce);
+        //rb.velocity = movement;
     }
-
 
     public bool IsGrounded()
     {
@@ -75,3 +78,4 @@ public class PlayerJump : MonoBehaviour
         
     }
 }
+*/

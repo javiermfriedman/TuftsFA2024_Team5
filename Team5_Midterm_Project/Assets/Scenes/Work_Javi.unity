@@ -879,7 +879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artSharp: {fileID: 1970189640}
   artBlurry: {fileID: 1057430788}
-  isFrontArt: 1
+  isFrontArt: 0
 --- !u!156049354 &394354774
 Grid:
   m_ObjectHideFlags: 0
@@ -2683,7 +2683,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.11011791, a: 1}
   m_Origin: {x: -13, y: -4, z: 0}
   m_Size: {x: 13, y: 13, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -4293,7 +4293,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.012245178, g: 1, b: 0, a: 1}
   m_Origin: {x: -13, y: -4, z: 0}
   m_Size: {x: 13, y: 13, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -6073,7 +6073,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651157713}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 10.7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
