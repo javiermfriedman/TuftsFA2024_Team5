@@ -11,6 +11,8 @@ TagManager:
   - PauseMenuSlider
   - Checkpoint
   - DaCheckpoint
+  - frontTilemap
+  - backTilemap
   layers:
   - Default
   - TransparentFX
