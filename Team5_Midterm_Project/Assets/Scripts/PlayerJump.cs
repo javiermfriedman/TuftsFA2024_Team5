@@ -15,10 +15,14 @@ public class PlayerJump : MonoBehaviour
     public bool canJump = false;
     public int jumpTimes = 0;
     public Animator anim;
+    public bool isFalling;
 
+    
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
+        
         anim = GetComponentInChildren<Animator>(); 
         Debug.Log(anim);
     }
@@ -27,8 +31,14 @@ public class PlayerJump : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            Debug.Log("bruh");
             Jump();
+        }
+        
+        isFalling = rb.velocity.y < 0? true : false;
+        if (isFalling && !(IsGrounded()))
+        {
+            anim.SetBool("Jump", false);
+            anim.SetBool("Fall", true);
         }
     }
 
@@ -40,7 +50,6 @@ public class PlayerJump : MonoBehaviour
             jumpTimes += 1;
             rb.velocity = Vector2.up * jumpForce;
             anim.SetBool("Jump", true); 
-    
         }
         else
         {
@@ -50,8 +59,10 @@ public class PlayerJump : MonoBehaviour
 
     public void OnCollisionEnter2D (Collision2D other) 
     {
+        anim.SetBool("Fall", false);
         anim.SetBool("Jump", false);
-        //Debug.Log("a");
+        
+        Debug.Log("a");
     }
 
 
@@ -63,12 +74,12 @@ public class PlayerJump : MonoBehaviour
         Collider2D enemyCheck = Physics2D.OverlapCircle(feet.position, 2f, enemyLayer);
         if ((groundCheck != null) || (groundFrontCheck != null) || (groundBackCheck != null) || (enemyCheck != null))
         {
-            Debug.Log("I am trouching ground!");
+            //Debug.Log("I am trouching ground!");
             jumpTimes = 0;
             anim.SetBool("Jump", false); 
             return true;
         } else {
-            Debug.Log("nno ground!");
+            //Debug.Log("nno ground!");
             return false;
         }
         return false;
