@@ -179,7 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artSharp: {fileID: 3111969005252161364}
   artBlurry: {fileID: 7776223208050299586}
-  isFrontArt: 1
+  isFrontArt: 0
 --- !u!251 &5260376669805241201
 PlatformEffector2D:
   m_ObjectHideFlags: 0
