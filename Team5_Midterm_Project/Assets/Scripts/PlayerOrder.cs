@@ -16,7 +16,7 @@ public class PlayerOrder : MonoBehaviour{
         sprite = art.GetComponent<SpriteRenderer>();
         if (isFront)
         {
-            sortingOrder = 100;
+            sortingOrder = 63;
         }
         else
         {
