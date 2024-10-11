@@ -20,7 +20,7 @@ public class PlayerOrder : MonoBehaviour{
         }
         else
         {
-            sortingOrder = 59;
+            sortingOrder = 54;
         }
         
         sprite.material.color = Color.gray;
@@ -67,7 +67,7 @@ public class PlayerOrder : MonoBehaviour{
         }
         else
         {
-            sortingOrder = 59;
+            sortingOrder = 54;
             size = new Vector2(1.1f, 1.1f);
             shadow = new Color(1f, 1f, 1f, 1f);
         }
