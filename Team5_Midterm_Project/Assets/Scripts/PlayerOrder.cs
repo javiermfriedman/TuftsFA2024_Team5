@@ -61,7 +61,7 @@ public class PlayerOrder : MonoBehaviour{
         isFront = !isFront;
         if (isFront)
         {
-            sortingOrder = 100;
+            sortingOrder = 63;
             size = new Vector2(1.6f, 1.6f);
             shadow = new Color(0.6f, 0.6f, 0.6f, 1f);
         }
