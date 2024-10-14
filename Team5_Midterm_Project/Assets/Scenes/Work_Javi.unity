@@ -215,6 +215,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 434515730}
     m_Modifications:
+    - target: {fileID: 399377562576326888, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591915493533340967, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_Name
       value: TreeMushLeftFront (4)
@@ -1943,7 +1951,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 62
+  m_SortingOrder: 56
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -14856,23 +14864,43 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 1323731978380671889, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167483827786711534, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
       propertyPath: m_Name
       value: GroundMush_2Back
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828786783864178155, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4285713
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828786783864178155, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4285713
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828786783864178155, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4285713
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 241.5
+      value: 344.99997
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.026889324
+      value: 0.69015807
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14884,15 +14912,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16136,6 +16164,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 434515730}
     m_Modifications:
+    - target: {fileID: 399377562576326888, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591915493533340967, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_Name
       value: TreeMushLeftFront (2)
@@ -17119,9 +17155,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4979827437176635096, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6871132569421860664, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
       propertyPath: m_Name
       value: GroundMushTallFront (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7505084602946725930, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17136,6 +17180,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 1323731978380671889, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167483827786711534, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
       propertyPath: m_Name
       value: GroundMush_2Back
@@ -18185,6 +18237,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 399377562576326888, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591915493533340967, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_Name
       value: TreeMushLeftBack (2)
@@ -18350,6 +18410,9 @@ Transform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 680835285}
+  - {fileID: 2146129790}
+  - {fileID: 1300806243}
   - {fileID: 1097385969}
   - {fileID: 1261434328}
   - {fileID: 680343074}
@@ -18363,14 +18426,15 @@ Transform:
   - {fileID: 906011916}
   - {fileID: 1370780114}
   - {fileID: 414690604}
-  - {fileID: 680835285}
   - {fileID: 1807423231}
   - {fileID: 1109983924}
-  - {fileID: 2146129790}
-  - {fileID: 1300806243}
   - {fileID: 1718758840}
   - {fileID: 489160457}
   - {fileID: 1752047812}
+  - {fileID: 2041943309}
+  - {fileID: 1659465796}
+  - {fileID: 423633003}
+  - {fileID: 2134010029}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18464,23 +18528,31 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1781691250}
+    m_TransformParent: {fileID: 434515730}
     m_Modifications:
+    - target: {fileID: 399377562576326888, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591915493533340967, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_Name
       value: TreeMushLeftFront
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.8
+      value: 111.54
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 3.27
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18492,15 +18564,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -19653,6 +19725,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &423633003 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+  m_PrefabInstance: {fileID: 2048941689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &423896783
 GameObject:
   m_ObjectHideFlags: 0
@@ -19770,17 +19847,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 873748718}
+  - {fileID: 966996626}
   - {fileID: 2026256160}
   - {fileID: 146028884}
   - {fileID: 2035880161}
+  - {fileID: 2079417697}
   - {fileID: 420486645}
   - {fileID: 1947514573}
   - {fileID: 1781691250}
   - {fileID: 28650305}
   - {fileID: 7828786784201512117}
   - {fileID: 921209145}
-  - {fileID: 873748718}
-  - {fileID: 966996626}
   - {fileID: 1032295371}
   - {fileID: 2093569717}
   - {fileID: 1535673609}
@@ -20068,6 +20146,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 434515730}
     m_Modifications:
+    - target: {fileID: 399377562576326888, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591915493533340967, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_Name
       value: TreeMushLeftFront (3)
@@ -20213,6 +20299,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 399377562576326888, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591915493533340967, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_Name
       value: TreeMushLeftBack (4)
@@ -20358,6 +20452,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 434515730}
     m_Modifications:
+    - target: {fileID: 399377562576326888, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591915493533340967, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_Name
       value: TreeMushLeftFront
@@ -20510,11 +20612,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 399377562576326888, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_SortingOrder
-      value: 51
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1591915493533340967, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_SortingOrder
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_Name
@@ -22033,11 +22135,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 399377562576326888, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_SortingOrder
-      value: 51
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1591915493533340967, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_SortingOrder
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_Name
@@ -23241,11 +23343,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 399377562576326888, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_SortingOrder
-      value: 51
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1591915493533340967, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_SortingOrder
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_Name
@@ -23585,7 +23687,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 20
+  m_SortingOrder: 51
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -47437,6 +47539,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 976029616283553137, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101772945633854479, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_Name
       value: GroundMushTallBack (5)
@@ -49019,6 +49129,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 976029616283553137, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101772945633854479, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_Name
       value: GroundMushTallBack (4)
@@ -51112,16 +51230,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4979827437176635096, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6871132569421860664, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
       propertyPath: m_Name
       value: GroundMushTallFront 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7505084602946725930, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1883483109381081458, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2079417697}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
 --- !u!1001 &963430019
@@ -52308,9 +52431,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4979827437176635096, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6871132569421860664, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
       propertyPath: m_Name
       value: GroundMushTallFront (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7505084602946725930, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -53931,6 +54062,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 434515730}
     m_Modifications:
+    - target: {fileID: 5188339455501391717, guid: 4014ad3ea8a204b72b3ee882ec147bbb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 4014ad3ea8a204b72b3ee882ec147bbb, type: 3}
       propertyPath: m_Name
       value: TreeMushRightfront
@@ -53978,6 +54113,10 @@ PrefabInstance:
     - target: {fileID: 7828786783864178155, guid: 4014ad3ea8a204b72b3ee882ec147bbb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523293238067405955, guid: 4014ad3ea8a204b72b3ee882ec147bbb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -54679,6 +54818,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 5188339455501391717, guid: c9ba67ea3503348438d6294eef3ee9df, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: c9ba67ea3503348438d6294eef3ee9df, type: 3}
       propertyPath: m_Name
       value: TreeMushRightBack (1)
@@ -54726,6 +54869,10 @@ PrefabInstance:
     - target: {fileID: 7828786783864178155, guid: c9ba67ea3503348438d6294eef3ee9df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523293238067405955, guid: c9ba67ea3503348438d6294eef3ee9df, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -55109,6 +55256,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 434515730}
     m_Modifications:
+    - target: {fileID: 5188339455501391717, guid: c9ba67ea3503348438d6294eef3ee9df, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: c9ba67ea3503348438d6294eef3ee9df, type: 3}
       propertyPath: m_Name
       value: TreeMushRightBack
@@ -55156,6 +55307,10 @@ PrefabInstance:
     - target: {fileID: 7828786783864178155, guid: c9ba67ea3503348438d6294eef3ee9df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523293238067405955, guid: c9ba67ea3503348438d6294eef3ee9df, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -55598,23 +55753,43 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 976029616283553137, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101772945633854479, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_Name
       value: GroundMushTallBack
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4285713
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4285713
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4285713
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 311.57
+      value: 445.09998
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.57
+      value: -0.08571428
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalPosition.z
@@ -55626,15 +55801,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -56529,6 +56704,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 434515730}
     m_Modifications:
+    - target: {fileID: 1323731978380671889, guid: 469eee6da9699468c818693c7025207e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167483827786711534, guid: 469eee6da9699468c818693c7025207e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6808219382627356122, guid: 469eee6da9699468c818693c7025207e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.1
@@ -56972,23 +57155,43 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 976029616283553137, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101772945633854479, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_Name
       value: GroundMushTallBack (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4285713
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4285713
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4285713
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 313.96
+      value: 448.51425
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.57
+      value: -0.08571428
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalPosition.z
@@ -57000,15 +57203,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -58571,6 +58774,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 434515730}
     m_Modifications:
+    - target: {fileID: 399377562576326888, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591915493533340967, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_Name
       value: TreeMushLeftFront
@@ -58967,6 +59178,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 399377562576326888, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591915493533340967, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 2273931805654376259, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.2
@@ -60195,9 +60414,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4979827437176635096, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6871132569421860664, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
       propertyPath: m_Name
       value: GroundMushTallFront (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7505084602946725930, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -60581,6 +60808,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 434515730}
     m_Modifications:
+    - target: {fileID: 1323731978380671889, guid: 469eee6da9699468c818693c7025207e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167483827786711534, guid: 469eee6da9699468c818693c7025207e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 469eee6da9699468c818693c7025207e, type: 3}
       propertyPath: m_Name
       value: GroundMush_2_front
@@ -61549,6 +61784,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 434515730}
     m_Modifications:
+    - target: {fileID: 5188339455501391717, guid: 4014ad3ea8a204b72b3ee882ec147bbb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 4014ad3ea8a204b72b3ee882ec147bbb, type: 3}
       propertyPath: m_Name
       value: TreeMushRightfront (1)
@@ -61596,6 +61835,10 @@ PrefabInstance:
     - target: {fileID: 7828786783864178155, guid: 4014ad3ea8a204b72b3ee882ec147bbb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523293238067405955, guid: 4014ad3ea8a204b72b3ee882ec147bbb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -61883,6 +62126,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1659465796 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+  m_PrefabInstance: {fileID: 1315817490}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1671817303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61891,6 +62139,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 434515730}
     m_Modifications:
+    - target: {fileID: 399377562576326888, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591915493533340967, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_Name
       value: TreeMushLeftFront (1)
@@ -67043,6 +67299,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 976029616283553137, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101772945633854479, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_Name
       value: GroundMushTallBack (6)
@@ -67788,7 +68052,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1323731978380671889, guid: 469eee6da9699468c818693c7025207e, type: 3}
       propertyPath: m_SortingOrder
-      value: 70
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167483827786711534, guid: 469eee6da9699468c818693c7025207e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 469eee6da9699468c818693c7025207e, type: 3}
       propertyPath: m_Name
@@ -68507,9 +68775,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4979827437176635096, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6871132569421860664, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
       propertyPath: m_Name
       value: GroundMushTallFront 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7505084602946725930, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -68613,6 +68889,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 399377562576326888, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591915493533340967, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: 43340d2edbfd94de9b7a974fe5912579, type: 3}
       propertyPath: m_Name
       value: TreeMushLeftBack (3)
@@ -68938,6 +69222,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7828786783864178155, guid: 469eee6da9699468c818693c7025207e, type: 3}
   m_PrefabInstance: {fileID: 1269802971}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2041943309 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+  m_PrefabInstance: {fileID: 1223242499}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2047364715
 GameObject:
   m_ObjectHideFlags: 0
@@ -69028,23 +69317,43 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 976029616283553137, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101772945633854479, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_Name
       value: GroundMushTallBack (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4285713
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4285713
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4285713
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 317.31
+      value: 453.29996
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.57
+      value: -0.08571428
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalPosition.z
@@ -69056,15 +69365,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7828786783864178155, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -69275,7 +69584,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 399377562576326888, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_SortingOrder
-      value: 51
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591915493533340967, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: fc88b89ee34bf4842ae8fea94976cc3c, type: 3}
       propertyPath: m_Name
@@ -69693,6 +70006,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 353776025}
     m_Modifications:
+    - target: {fileID: 976029616283553137, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101772945633854479, guid: da553b427e2a645ccabf1553992b4911, type: 3}
+      propertyPath: m_SortingOrder
+      value: 52
+      objectReference: {fileID: 0}
     - target: {fileID: 7290874882885272640, guid: da553b427e2a645ccabf1553992b4911, type: 3}
       propertyPath: m_Name
       value: GroundMushTallBack (3)
@@ -69887,9 +70208,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4979827437176635096, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6871132569421860664, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
       propertyPath: m_Name
       value: GroundMushTallFront 1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7505084602946725930, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 9114127666194302361, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -70335,6 +70664,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &2134010029 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7828786783864178155, guid: 1c75289bf1a4942c7a772f616af63589, type: 3}
+  m_PrefabInstance: {fileID: 134490131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2134514589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71178,9 +71512,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4979827437176635096, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6871132569421860664, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
       propertyPath: m_Name
       value: GroundMushTallFront
+      objectReference: {fileID: 0}
+    - target: {fileID: 7505084602946725930, guid: 41f7d26e517da9b4c9ce19d71831430e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -71227,7 +71569,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 20
+  m_SortingOrder: 56
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -83156,7 +83498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7164564662217023390, guid: e0ff42d5bf6cd244bb4637ab4a5a8d59, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7164564662217023390, guid: e0ff42d5bf6cd244bb4637ab4a5a8d59, type: 3}
       propertyPath: m_LocalScale.x
