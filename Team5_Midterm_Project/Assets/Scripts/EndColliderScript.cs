@@ -15,7 +15,7 @@ public class EndColliderScript : MonoBehaviour
         // You can find the PlayerMove script if it's on a specific player object.
         // Assuming there's only one player, you can use the following line:
         playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMove>();
-        anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+        anim = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Animator>();
         Debug.Log(anim);
     }
 
