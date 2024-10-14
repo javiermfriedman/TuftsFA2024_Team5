@@ -6,6 +6,8 @@ public class EndColliderScript : MonoBehaviour
 {
     // Reference to the player move script
     private PlayerMove playerMove;
+    //public GameObject player;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -13,6 +15,8 @@ public class EndColliderScript : MonoBehaviour
         // You can find the PlayerMove script if it's on a specific player object.
         // Assuming there's only one player, you can use the following line:
         playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMove>();
+        anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+        Debug.Log(anim);
     }
 
     // Update is called once per frame
@@ -32,6 +36,7 @@ public class EndColliderScript : MonoBehaviour
             {
                 playerMove.isAlive = false;      // Stop player movement
                 playerMove.isAutoRunning = false; // If you want to stop auto-running as well
+                anim.SetBool("Win", true);
             }
         }
     }

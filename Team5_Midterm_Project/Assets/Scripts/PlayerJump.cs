@@ -62,7 +62,7 @@ public class PlayerJump : MonoBehaviour
         anim.SetBool("Fall", false);
         anim.SetBool("Jump", false);
         
-        Debug.Log("a");
+        //Debug.Log("a");
     }
 
 
